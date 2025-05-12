@@ -6,22 +6,47 @@
     "dev": "next dev --turbopack",
     "build": "next build",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "tsx ./src/lib/db/migrate.ts"
   },
   "dependencies": {
-    "react": "^19.0.0",
-    "react-dom": "^19.0.0",
-    "next": "15.3.1"
+    "@clerk/nextjs": "^6.18.4",
+    "@heroui/alert": "^2.2.19",
+    "@heroui/button": "^2.2.19",
+    "@heroui/card": "^2.2.18",
+    "@heroui/system": "2.4.15",
+    "@heroui/theme": "2.4.15",
+    "@hookform/resolvers": "^5.0.1",
+    "@imagekit/next": "^2.1.0",
+    "@neondatabase/serverless": "^1.0.0",
+    "dotenv": "^16.5.0",
+    "drizzle-orm": "^0.43.1",
+    "framer-motion": "^12.9.4",
+    "imagekit": "^6.0.0",
+    "lucide-react": "^0.506.0",
+    "next": "15.3.1",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "react-hook-form": "^7.56.1",
+    "zod": "^3.24.3"
   },
   "devDependencies": {
-    "typescript": "^5",
+    "@eslint/eslintrc": "^3",
+    "@heroui/react": "^2.7.8",
+    "@tailwindcss/postcss": "^4",
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
-    "@tailwindcss/postcss": "^4",
-    "tailwindcss": "^4",
+    "autoprefixer": "^10.4.21",
+    "drizzle-kit": "^0.31.0",
     "eslint": "^9",
     "eslint-config-next": "15.3.1",
-    "@eslint/eslintrc": "^3"
+    "postcss": "^8.5.3",
+    "tailwindcss": "^3.4.16",
+    "tsx": "^4.19.3",
+    "typescript": "^5"
   }
 }
