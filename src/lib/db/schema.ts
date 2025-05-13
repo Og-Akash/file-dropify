@@ -13,6 +13,7 @@ export const files = pgTable("files", {
     // storage informations
     fileUrl:text("file_url").notNull(),
     thumnailUrl: text("thumnail_url"),
+    imagekitFileId: text("imagekit_file_id").notNull(),
 
     // Ownership information
     userId: uuid("user_id").notNull(),

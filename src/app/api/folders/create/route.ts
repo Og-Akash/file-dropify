@@ -56,6 +56,7 @@ export async function POST(req: NextRequest) {
       type: "folder",
       fileUrl: "",
       thumnailUrl: null,
+      imagekitFileId: "",
       userId,
       parentId,
       isFolder: true,
